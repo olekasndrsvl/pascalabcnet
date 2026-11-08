@@ -34,7 +34,7 @@ begin
   var personArr := Arr(p1, p2, p3);
   
   // Расширенный is
-  if personArr is [Person(name1, 11, CardInfo(_, cv)), _, Person(name2, 13, _)] then 
+  if personArr is [Person(name1, 11, CardInfo(_, cv)), _, Person(name2, 13, _)] then // правило в грамматике закомментировали, почему непонятно...
     assert(name1.Equals('Вася') and (cv = 321) and name2.Equals('Маша'));
   
   // match .. with

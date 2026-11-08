@@ -38,6 +38,6 @@ begin
   match p with
     Person('Петя', _, _): assert(false);
     Person('Вася', _, [_, _, var x]): assert(false);
-    Person(name, _, [CardInfo(_, 321), .., CardInfo(_, 324)]): assert(name.Equals('Вася'));
+    Person(name, _, [CardInfo(_, 321), .., CardInfo(_, 324)]): assert(name.Equals('Вася')); // тут падает!!!!
   end;
 end.
